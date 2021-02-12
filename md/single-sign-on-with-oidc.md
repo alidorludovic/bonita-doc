@@ -136,8 +136,8 @@ For example on linux, you can use the command ssh-keygen, then go to “cd ~/.ss
     + The resource property is the OIDC client name given to your bonita installation. You can change it if you want but you need to provide it to your OIDC provider.  
     + The sslPolicy option may need to be changed if Bonita Portal and the IdP are not both accessed via HTTPS. Possible values for this property are: ALL, EXTERNAL, and NONE. For ALL, all requests must come in via HTTPS. For EXTERNAL, only non-private IP addresses must come over via HTTPS. For NONE, no requests are required to come over via HTTPS.  
     + If your **IdP requires the SSO requests to be signed**:
-      + make sure you have signing="true" inside the Key node of the SP
-      TODO
+      + 
+      TODO: explain the most common properties
       
 ::: info
 **Note 2:** _If your IdP neither requires the SSO requests to be signed nor encrypts its own responses, you can remove the Keys node from the SP and set the attributes signaturesRequired, signRequest and signResponse to false._  
@@ -177,7 +177,7 @@ If you need more fine tuning or if you cannot update the reverse proxy configura
 ## Configure the Identity Provider
 
 Your IdP should declare a Service Provider named `bonita` (or the value of the `resource` property set in the file **keycloack-oidc.json** of Bonita bundle if it is different) with the following configuration:
-- TODO
+- TODO: explain at least the mandatory properies
 
 ::: info
 **Note:** If the IdP declares a redirect/target URL, it might override the target URL set by the Service Provider request, and you may always end up on the same page after logging in. In that case, try to remove the redirect URL. Bonita supports redirection to the URL initially requested after logging in on the IdP, provided the IdP doesn't force this URL.
@@ -259,4 +259,13 @@ We recommend that you use LDAP as your master source for information, synchroniz
 **Note :** By default the [LDAP synchronizer](ldap-synchronizer.md) sets the password of the accounts created with the same value as the username. So, even if you allow standard authentication (by setting the property `oidc.auth.standard.allowed` in **authenticationManager-config.properties**), users won't be able to log in with the portal login page directly without going through the OIDC provider authentication.   
 :::
 
-## Single sign-on with OIDC using the REST API
+## Using Bonita REST API with OIDC
+
+When Bonita web application is configured for authentication with OpenID Connect, Bonita REST API is secured through OIDC too and it is possible to call it with an Oauth Access token. 
+To obtain the access token, there are several options depending on your OpenID provider configuration and you use case:
+1. Resource Owner Credentials Grant 
+In this scenario, the client application that needs to use Bonita REST API performs a request to the token end point of the OIDC provider with the username and password of the user account to use in Bonita.
+TODO: example of request
+1. Authorization Code or Implicit Grant
+Those scenario work the same way as when you login on Bonita portal/apps except it is the client application that needs to use Bonita REST API which needs to trigger the authentication process by calling the OIDC provider authorisation endpoint with Bonita OIDC client as `client_id`. The rest of the scenario is similar to what is described in the OIDC Authorization Code Flow schema.  
+Once you obtained the Access token, you can make your REST API request in a normal way, just adding a header `Authoritation` with value `Bearer <Access token>` (replace the placeholder <Access token> with the token returned by the OIDC provider and make sure to keep the whitespace after `Bearer`).
