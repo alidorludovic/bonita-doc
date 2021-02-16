@@ -3,7 +3,7 @@
 
 The user usually drives process execution using web interfaces. Bonita provides a solution, the UI Designer, to easily create such interfaces.
 
-::: info
+NOTE:
 The standard workflow would be to:
 
 * Create the Business Data Model
@@ -12,7 +12,7 @@ The standard workflow would be to:
 * Generate Bonita forms based on contracts
 
 As we have already done the first three steps, it is now time to create the forms.
-:::
+
 
 Start with the process instantiation form:
 

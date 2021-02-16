@@ -2,9 +2,9 @@
 
 How to manage users through Bonita Portal.
 
-:::info
+NOTE:
 You must be logged on with the Administrator profile.
-:::
+
 
 == How to create a user
 

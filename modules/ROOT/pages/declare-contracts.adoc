@@ -21,9 +21,9 @@ Create the contract for process instantiation:
 image:images/getting-started-tutorial/declare-contracts/declare-process-instantiation-contract.gif[Declare process instantiation contract]
 // {.img-responsive .img-thumbnail}
 
-::: info
+NOTE:
 You now have a contract named _claimedInput_ of type "COMPLEX" with one attribute, _description_ of type "TEXT". Also, as the description is mandatory, you can see in menu:Execution[Contract > Constraints] tab that a validation rule has been created to make sure that we get a value for the description. Finally, if you edit the _claim_ business variable, you can see that a script has been generated for you to set the variable default value. Setting this value will trigger an insert in the `CLAIM` table created for you in the business data database managed by Bonita.
-:::
+
 
 Now let's create the contract for the user task _Review and answer claim_:
 
@@ -39,9 +39,9 @@ Now let's create the contract for the user task _Review and answer claim_:
 image:images/getting-started-tutorial/declare-contracts/declare-user-task-contract.gif[Declare user task contract]
 // {.img-responsive .img-thumbnail}
 
-::: info
+NOTE:
 We now have a contract for the step. This contract does not create a new claim but rather updates an attribute of the claim (the claim is created when we start the process). The attribute update is performed by an operation (generated for you) on the task. Select menu:Execution[Operations] to view the operation that updates the _answer_ attribute.
-:::
+
 
 Create the contract for _Read the answer and rate it_ task:
 

@@ -1,8 +1,8 @@
 = How to migrate a SVN repository to Github
 
-::: info
+NOTE:
 *Note:* For Enterprise, Performance, Efficiency, and Teamwork editions only.
-:::
+
 
 This page explains how to migrate a *SVN* repository and its history to a *Git* repository on https://github.com/[GitHub].
 

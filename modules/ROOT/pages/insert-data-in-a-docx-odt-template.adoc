@@ -4,9 +4,9 @@ The *insert data in a .docx/.odt template* fills a specified template file by in
 
 == Usage
 
-::: info
+NOTE:
 *Note:* For Enterprise, Performance, Efficiency, and Teamwork editions only.
-:::
+
 
 The template is a LibreOffice/OpenOffice `.odt` file or a Microsoft Word``.docx`` file with special placeholders called `keys`. +
 A key is a replaceable element in the template that is identified with a dollar sign and surrounded by braces, (eg. $\{element}), following the https://velocity.apache.org/engine/releases/velocity-1.7/user-guide.html[Velocity Template Language].
@@ -22,9 +22,9 @@ The generated file can replace the template in the same document or be stored in
 
 === Using Word (docx)
 
-::: info
+NOTE:
 *Note:* Tested versions are *Microsoft Word 2007/2010*. This connector may work with later versions.
-:::
+
 
 ==== Create a `field`
 

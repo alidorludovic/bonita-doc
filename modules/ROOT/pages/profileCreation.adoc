@@ -53,9 +53,9 @@ Therefore, you could have a "profiles_dev.xml", a "profiles_UAT.xml", and a "pro
 
 == Create and edit a profile
 
-::: info
+NOTE:
 *Note:* All Bonita subscription editions come with an .xml editor for this feature. Only Enterprise, Performance and Efficiency editions also come with a graphical UI.
-:::
+
 
 From Bonita Studio, use the *new* button in the Studio coolbar or click on *Organization* \-> *Profile* \-> *New...*
 It will create an empty file of profiles with a default name and open an editor. You can *rename* this file from the graphical UI, the project explorer or the menu *Open*.

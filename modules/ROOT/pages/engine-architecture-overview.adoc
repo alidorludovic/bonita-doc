@@ -816,10 +816,10 @@ For example, the API interface is accessed both on the server side, which contai
 * bonita-server contains code used on by the server. For example, it contains service implementations, the services accessor, and API implementations.
 * bonita-client contains client-only code. For example, it contains the Accessor service for the APIs, which is not in the common or server packages to prevent the server code calling the client-side API accessor.
 
-::: info
+NOTE:
 In the Enterprise, Performance, Efficiency, and Teamwork editions, these jar files are respectively:
 
 * bonita-common-sp.jar
 * bonita-server-sp.jar
 * bonita-client-sp.jar
-:::
+

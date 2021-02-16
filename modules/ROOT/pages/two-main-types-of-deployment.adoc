@@ -67,9 +67,9 @@ For more details, please read link:configure-client-of-bonita-bpm-engine.md#clie
 
 ===== Configuring the Bonita Portal
 
-:::info
+NOTE:
 *Note:* At the end of these steps, you can start the Bonita Portal bundle with the startup script.
-:::
+
 
 Unarchive the bundle.
 Remove the content of the `setup` directory as the setup tool in not used on the Portal part

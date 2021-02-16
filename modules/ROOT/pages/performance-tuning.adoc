@@ -85,12 +85,12 @@ You can then configure other clients to use one of the remote modes but you do n
 The HTTP access mode is available using our natively provided link:configure-client-of-bonita-bpm-engine[bonita-client library]. It can also be used from other
 technologies like PHP, .Net or Javascript (in that case, you need to develop your our client).
 
-::: warning
+WARNING:
 We do not guarantee to keep the http protocol stable, so we strongly recommend that you use
 
 * the standard bonita-client library
 * the same version for both the client and the server
-:::
+
 
 This mode can be easily used inside a web container like Tomcat or Jetty.
 
@@ -529,12 +529,12 @@ effective_io_concurrency = 200
 checkpoint_completion_target = 0.9
 ----
 
-::: warning
+WARNING:
 Warning: properties `random_page_cost` and `seq_page_cost` should have values relative to each other thoroughly set, in order
 for PostgreSQL query planner to choose the right execution plan. +
 See PostgreSQL https://www.postgresql.org/docs/11/runtime-config-query.html#RUNTIME-CONFIG-QUERY-CONSTANTS[Planner Cost Constants]
 for more details on how to set those values.
-:::
+
 
 If you want to be able to *restore live PITR (https://www.postgresql.org/docs/11/continuous-archiving.html[Point-in-Time Recovery]) backup* of the database, ensure archiving is activated:
 

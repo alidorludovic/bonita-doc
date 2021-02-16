@@ -20,9 +20,9 @@ image:images/getting-started-tutorial/define-who-can-do-what/add-and-organize-la
 image:images/getting-started-tutorial/define-who-can-do-what/diagrams-with-lanes.png[Diagrams with lanes]
 // {.img-responsive .img-thumbnail}
 
-::: info
+NOTE:
 A lane is used to group together user tasks that should be done by the same set of users.
-:::
+
 
 Now we need to define "actors," one for each lane, and map them to the lane they belong to:
 

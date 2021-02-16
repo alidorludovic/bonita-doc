@@ -38,9 +38,9 @@ Make this call to get the status the BDM.
 }
 ----
 +
-::: info
+NOTE:
  *Note:* `lastUpdatedBy"` value is always -1 because only the tenant_technical_user can install BDM.
- :::
+ 
 
 [discrete]
 ==== Install or update a BDM
@@ -50,9 +50,9 @@ Need to be done in two successive steps: +
 1 - Upload a BDM file +
 2 - Install/Update the previously uploaded file
 
-::: warning
+WARNING:
  *Note:* To do this, your tenant services need to be paused.
- :::
+ 
 
 [discrete]
 ===== Upload a BDM file
@@ -88,10 +88,10 @@ Need to be done in two successive steps: +
  }
 ----
 +
-::: info
+NOTE:
  *Note:* Use the file name returned in the first step to perform the second step.
- :::
+ 
 
-::: warning
+WARNING:
  *Note:* In Efficiency, Performance and Enterprise editions, if you have an access control file installed on your tenant, you need to delete    it before installing or updating your BDM.
- :::
+ 

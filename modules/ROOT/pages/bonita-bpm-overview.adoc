@@ -46,7 +46,7 @@ Bonita is provided in five different editions: Community, Teamwork, Efficiency, 
 
 Bonita 7.x provides new and improved features, including the xref:ui-designer-overview.adoc[UI Designer] for creating application pages and forms, as well as xref:contracts-and-contexts.adoc[contracts and context] to create a clear split between the process logic, the data, and the user views.
 
-::: warning Attention: Starting with Bonita 7.8, 6.x forms and case overview pages are not available for modeling or execution. Before migrating to Bonita 7.8, you need to create all forms with Bonita UI Designer to benefit from technologies like html/AngularJS and use contracts in tasks and process instantiation. For more information, read the xref:migrate-a-form-from-6-x.adoc[migrate a form from 6.x] page. :::
+WARNING: Attention: Starting with Bonita 7.8, 6.x forms and case overview pages are not available for modeling or execution. Before migrating to Bonita 7.8, you need to create all forms with Bonita UI Designer to benefit from technologies like html/AngularJS and use contracts in tasks and process instantiation. For more information, read the xref:migrate-a-form-from-6-x.adoc[migrate a form from 6.x] page. 
 
 You will also find lots of familiar features, which continue to work as they did in 6.x.
 

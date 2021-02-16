@@ -2,9 +2,9 @@
 
 The first step of this getting started tutorial is to set up your development environment. All you need to do is install Bonita Studio.
 
-::: info
+NOTE:
 If you face any difficulties in this getting started tutorial, please https://community.bonitasoft.com/questions-and-answers[ask for help on the Bonita community] and/or open an issue on the Bonita https://bonita.atlassian.net/projects/BBPMC/issues[Community issue tracker].
-:::
+
 
 == Download Bonita Studio
 
@@ -51,10 +51,10 @@ You should get the Bonita Studio welcome page:
 image:images/getting-started-tutorial/installation/studio-first-start-02-studio-on-welcome-page.png[Bonita Studio with welcome page displayed]
 // {.img-responsive .img-thumbnail}
 
-::: info
+NOTE:
 When Bonita Studio starts, various tasks are executed in the background, such as the embedded Bonita test server startup (including Bonita Engine initialization), Bonita test organization deployment, and more.
 This might take a while and may be why some features are not immediately available.
-:::
+
 
 == Installation validation
 

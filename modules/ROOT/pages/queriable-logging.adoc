@@ -2,9 +2,9 @@
 
 Queriable logger provides information about important events that happened in the Bonita Platform.
 
-::: info
+NOTE:
 *Note:* For Enterprise, Performance, Efficiency, and Teamwork editions only.
-:::
+
 
 == Purpose
 

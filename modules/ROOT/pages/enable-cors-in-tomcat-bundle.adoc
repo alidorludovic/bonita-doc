@@ -92,11 +92,11 @@ you will need to modify the tomcat `conf/context.xml` file, to set sameSiteCooki
     ...
 ----
 
-::: warning
+WARNING:
 *Warning:*
 Using sameSiteCookies="none" will also force you to use xref:ssl.adoc[secure HTTP (HTTPS) on your Bonita server]. +
 To explain this constraint, see https://blog.chromium.org/2019/10/developers-get-ready-for-new.html
-:::
+
 
 == HTML Example test page
 

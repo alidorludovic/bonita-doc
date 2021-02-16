@@ -5,10 +5,10 @@ Bonita Purge Tool provides the capability to purge finished (archived) process i
 By default, all archives are preserved forever in Bonita runtime, but if your functional context allows you to remove old unused process instances
 (for example, if you only need to keep a history of last 6 months), use this tool to clean up your Bonita database.
 
-::: info
+NOTE:
 *Note:* For Enterprise, Performance, Efficiency, and Teamwork editions only. +
 This tool is not available publicly. Use https://customer.bonitasoft.com/download/request[Bonita Customer Portal] to download it.
-:::
+
 
 == Pre-requisites
 

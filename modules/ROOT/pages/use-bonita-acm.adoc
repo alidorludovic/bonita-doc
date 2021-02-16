@@ -2,9 +2,9 @@
 
 This page explains how to enable Adaptive Case Management capacity in Bonita.
 
-::: info
+NOTE:
 *Note:* For Enterprise, Performance, Efficiency, and Teamwork editions only.
-:::
+
 
 == Enable ACM Engine Plug-in
 

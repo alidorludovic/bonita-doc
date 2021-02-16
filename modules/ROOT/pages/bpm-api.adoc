@@ -124,9 +124,9 @@ NOTE: if there is no data with the specified name in the activity, the update wi
 
 ==== Update activity variables and execute a task
 
-::: info
+NOTE:
 Note: if the task definition includes a connector that is executed on finish and updates the value of a variable, the value set by the REST API call is overwritten.
-:::
+
 
 * *URL* +
 `/API/bpm/activity/:id`
@@ -2001,9 +2001,9 @@ A representation of a list of case variables
 
 Use the document resource to access a document in an active case.
 
-::: warning
+WARNING:
 *:fa-exclamation-triangle: Caution:* This resource is deprecated and may be removed in a future release. Instead, use caseDocument or archivedCaseDocument.
-:::
+
 
 == CaseDocument
 
@@ -2012,10 +2012,10 @@ Use the document resource to access a document in an active case.
 
 Use the case document resource to access a document in an active case. For archived cases and previous document versions use archivedCaseDocument.
 
-::: warning
+WARNING:
 
 * `author` in the payload is deprecated: use `submittedBy`
-:::
+
 
 [discrete]
 ==== Identifier
@@ -2989,11 +2989,11 @@ The process definition id, in JSON
 
 ===== Create a case with variables
 
-::: danger
+ danger
 :fa-exclamation-triangle: *Warning:* The attribute "variables" on the request payload is used to initialize the process variables (not BDM variables).
 If you want to initialize BDM variables at process instantiation, add a contract on the process and map BDM variables to the contract data.
 See <<start-a-process-using-an-instantiation-contract,Start a process using an instantiation contract>> for usage.
-:::
+
 
 [source,json]
 ----
@@ -3452,7 +3452,7 @@ The `d` (deploy) used to link:rest-api-overview.md#extend-resource[extend respon
 
 * `userId`
 
-::: info
+NOTE:
 Note: if the `userId` is not provided as a deploy parameter, the `userId` property of a comment is filled with the system user :
 
 [source,json]
@@ -3463,7 +3463,7 @@ Note: if the `userId` is not provided as a deploy parameter, the `userId` proper
 }
 ----
 
-:::
+
 
 ==== Create a comment
 
@@ -3590,7 +3590,7 @@ The `d` (deploy) used to link:rest-api-overview.md#extend-resource[extend respon
 
 * `userId`
 
-::: info
+NOTE:
 Note: if the `userId` is not provided as a deploy parameter, the `userId` property of a comment is filled with the system user :
 
 [source,json]
@@ -3601,7 +3601,7 @@ Note: if the `userId` is not provided as a deploy parameter, the `userId` proper
 }
 ----
 
-:::
+
 
 ==== Search for archived comments
 
@@ -3808,12 +3808,12 @@ The fields to be updated, in JSON
 
 You can delete a process based on its ID.
 
-::: warning
+WARNING:
 *Warning:* *Beware! Data loss risk!*
 Deleting a process will automatically delete all its cases (on-going and archived alike). Thus, the operation may take a long time, and fail if the transaction timeout is not large enough.
 This feature should only be used on non-production environments.
 *Please proceed at your own risk.*
-:::
+
 
 * *URL* +
 `/API/bpm/process/:processId`
@@ -3826,12 +3826,12 @@ This feature should only be used on non-production environments.
 
 You can also delete several processes.
 
-::: warning
+WARNING:
 *Warning:* *Beware! Data loss risk!*
 Deleting a process will automatically delete all its cases (on-going and archived alike). Thus, the operation may take a long time, and fail if the transaction timeout is not large enough.
 This feature should only be used on non-production environments.
 *Please proceed at your own risk.*
-:::
+
 
 * *URL* +
 `/API/bpm/process`

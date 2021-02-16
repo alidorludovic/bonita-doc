@@ -4,10 +4,10 @@ This page describes the suggested hardware and software requirements to install 
 
 == Hardware
 
-::: info
+NOTE:
 *Note:* The hardware recommended for Bonita Platform is strongly dependent on your environment and
 processes (number of processes instances, number of current users, operations and complexity...).
-:::
+
 
 Hardware required for Bonita Platform (Bonita Engine and Bonita Portal)
 | Type         | Minimum     | Recommended                       |

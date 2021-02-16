@@ -13,11 +13,11 @@ Here is an overview of process execution:
 * If the rating is equal to or greater than 3, the process will finish after the customer has read the answer
 * If the rating is lower than 3 an extra task will be assigned to the manager of the employee to work with this customer who is not really satisfied. Once this task is done the process will be completed
 
-::: info
+NOTE:
 To design this process we will use the Business Process Model and Notation (BPMN) standard. You don't need to learn everything about BPMN to follow this tutorial but, if you would like to know more, you can read the https://www.bonitasoft.com/library/ultimate-guide-bpmn[Ultimate Guide to BPMN 2.0].
-:::
 
-::: warning
+
+WARNING:
 We will use an iterative approach in the process development. This means that in the first iteration, we will have a few limitations:
 
 * a single user will perform all the tasks
@@ -25,7 +25,7 @@ We will use an iterative approach in the process development. This means that in
 * the process will follow a single path - the one for an unsatisfied customer
 
 As we introduce data in our process definition and configure actors, a user will be able to input data in web forms, the process will follow paths that depend on data values, and different users will be involved.
-:::
+
 
 == Create the process diagram
 
@@ -124,9 +124,9 @@ Your process diagram should look like this:
 
 image::images/getting-started-tutorial/draw-bpmn-diagram/process-diagram-before-transitions-configuration.png[Process diagram]
 
-::: info
+NOTE:
 Now you can see a validation error on the gateway. The error is displayed because we didn't define the conditions for process execution when it reaches the gateway. Trying to execute the process will fail because the process execution engine cannot determine which path to follow.
-:::
+
 
 We need to configure the conditions required to define the path to follow when executing the process. Conditions are defined on the gateway outgoing transitions (i.e. the arrows going out of the gateway):
 
@@ -137,9 +137,9 @@ We need to configure the conditions required to define the path to follow when e
 +
 image::images/getting-started-tutorial/draw-bpmn-diagram/transitions-name-and-condition.gif[Transitions names and conditions configuration]
 
-::: info
+NOTE:
 *Default flow* means that the transition will be activated only if all other conditions configured on the gateway outgoing transitions are _false_ (boolean value).
-:::
+
 
 We need to configure the condition on the transition from the gateway to the _Deal with unsatisfied customer_ task:
 
@@ -149,13 +149,13 @@ We need to configure the condition on the transition from the gateway to the _De
 . In *Condition* type the value _true_
 . In the Bonita Studio menu, click on menu:File[Save]
 
-::: warning
+WARNING:
 Due to the static value _true_, this version of the process will always go through the _Deal with unsatisfied customer_ task.
-:::
 
-::: info
+
+NOTE:
 In order to make the error go away, refresh the diagram validation: at the bottom of the screen, select the *Validation status* tab and click on the *Refresh* button. You should have only five warnings left.
-:::
+
 
 Congratulations! You have now your first valid BPMN process diagram!
 
@@ -179,12 +179,12 @@ You can now easily build, package, deploy and execute this process definition in
 image:images/getting-started-tutorial/draw-bpmn-diagram/run-process.gif[Process execution]
 // {.img-responsive .img-thumbnail}
 
-::: info
+NOTE:
 When you click on the *Run* button, the process definition and its dependencies are built, packaged and deployed in the Bonita Studio test environment. A user is logged in by default (username: _walter.bates_, password: _bpm_) and the auto-generated start form for the process is opened in your web browser. If you submit the instantiation form, it will start a new process instance (or case) and load the user task list in the Bonita Portal. In the task list, you can't immediately submit a user task because, by default, all users (of the test organization) are candidates to perform the tasks of the process. In order to act on the task you need first to "claim" it, which then makes you the only one - among all the possible candidates - who can do perform an action on it.
- :::
+ 
 
-::: info
+NOTE:
 You can view process instance information in the xref:cases.adoc[*Cases*] section of the Bonita Portal. You can switch between *Open cases* and *Archived cases* to either view the ongoing process instances or see completed ones. Note that if you want to start a second case (i.e. a process instance), you must go into the Bonita Portal *Processes* menu and click on the *Start a new case* button (i.e. the "play" icon in the *Action* column) next to the process definition name. If you click on the *Run* button from Bonita Studio, it will clean / overwrite any information related to any process with same name and version, including previous cases. Note that if you did any modifications to your project, you probably want to click on the *Run* button to be sure that the latest version is deployed.
-:::
+
 
 You successfully built and executed your first process. So far it is not very useful as it does not deal with any data and web forms, and  only includes a single submit button. In following chapters we will xref:define-business-data-model.adoc[define a business data model] and bind it to the process to save information related to the claim submitted by the user.

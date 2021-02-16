@@ -2,9 +2,9 @@
 
 Learn how you can set and use Bonita Search Keys to easily search for business values defined on your processes
 
-::: info
+NOTE:
 *Note:* For Bonita Enterprise, Performance and Efficiency editions only.
-:::
+
 
 A search key is data that is attached to a process and is used to distinguish between cases of the process in Bonita Portal. +
 You can define up to five search keys for a process.

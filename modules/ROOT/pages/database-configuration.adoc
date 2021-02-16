@@ -20,10 +20,10 @@ However, H2 is only suitable for testing purposes. When building a production en
 
 == Steps to switch to another RDBMS
 
-::: warning
+WARNING:
 Please note this procedure cannot be performed using the Bonita Studio. The Bonita Studio can run only on the H2 Database.
 To use Bonita on another RDBMS, please use a xref:_basic-bonita-platform-installation.adoc[bundle] or set up a xref:custom-deployment.adoc[standalone server].
-:::
+
 
 Here are the steps to follow. They are the same for the engine database and the business data database:
 
@@ -34,10 +34,10 @@ Here are the steps to follow. They are the same for the engine database and the 
 
 Steps 1 and 2 are detailed further down this page, steps 3 and 4 are part of the configuration part of the xref:tomcat-bundle.adoc[Tomcat bundle] page.
 
-::: warning
+WARNING:
 All RDBMSs require <<specific_database_configuration,specific customization>>, which must be done before you complete your installation. +
 If you do not complete the specific configuration for your RDBMS, your installation may fail.
-:::
+
 
 +++<a id="proprietary_jdbc_drivers">++++++</a>+++
 
@@ -64,10 +64,10 @@ Also, note that the owner of the new schemas must own the following privileges:
 * CREATE INDEX
 * SELECT, INSERT, UPDATE, DELETE on created TABLE
 
-:::info
+NOTE:
 CREATE TABLE and CREATE INDEX privileges are not required after first start in normal use. +
 If the same SQL user is used with the xref:migrate-from-an-earlier-version-of-bonita-bpm.adoc[migration tool], then this user needs such grants.
-:::
+
 
 To create the database(s), we recommend that you refer to your RDBMS documentation:
 
@@ -367,9 +367,9 @@ GRANT XA_RECOVER_ADMIN ON *.* to bonita, business_data;
 FLUSH PRIVILEGES;
 ----
 
-::: warning
+WARNING:
 Please note that the above command, by specifying *`*.*`*, is granting privileges for all databases. You may want to limit them to the Bonita BPM and BDM databases if there are additional databases in your MySQL server.
-:::
+
 
 Refer to the https://dev.mysql.com/doc/refman/8.0/en/privileges-provided.html[Privileges section] in the official MySQL documentation for further information.
 

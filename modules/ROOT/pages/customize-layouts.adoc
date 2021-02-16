@@ -1,8 +1,8 @@
 = Customize layouts
 
-::: info
+NOTE:
 *Note:* For Enterprise, Performance, Efficiency, and Teamwork editions only.
-:::
+
 
 == Overview
 

@@ -1,8 +1,8 @@
 = Bonita Layout
 
-::: info
+NOTE:
 *Note:* For Enterprise, Performance, Efficiency, and Teamwork editions only.
-:::
+
 
 This layout has different desktop and mobile versions.
 

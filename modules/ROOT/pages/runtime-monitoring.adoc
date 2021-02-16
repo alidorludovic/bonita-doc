@@ -88,7 +88,7 @@ as they are already published by the JVM itself by default)
 * Logging (disabled by default), that regularly prints to standard Bonita log file the Bonita-related metrics. Print interval can
 be changed (property `org.bonitasoft.engine.monitoring.logging.step`).
 
-::: info
+NOTE:
 To change any value, *uncomment the line by removing the # character*, and change the true / false value. +
 Then link:BonitaBPM_platform_setup.md#update_platform_conf[push your configuration changes] to database:
 
@@ -98,7 +98,7 @@ Then link:BonitaBPM_platform_setup.md#update_platform_conf[push your configurati
 ----
 
 Then restart the Tomcat server for the changes to take effect.
-:::
+
 
 === Activating specific metric indicators
 
@@ -123,7 +123,7 @@ They provide information about:
 
 Each of these metrics provides many different counters to finely understand what is going on.
 
-::: info
+NOTE:
 To change any value, *uncomment the line by removing the # character*, and change the true / false value. +
 Then link:BonitaBPM_platform_setup.md#update_platform_conf[push your configuration changes] to database:
 
@@ -134,7 +134,7 @@ Then link:BonitaBPM_platform_setup.md#update_platform_conf[push your configurati
 
 Then restart the Tomcat server for the changes to take effect.
 
-:::
+
 
 == Subscription-only monitoring
 
@@ -164,9 +164,9 @@ They can be activated by editing file `./setup/platform_conf/current/platform_en
 
 === Prometheus publisher
 
-::: info
+NOTE:
 *Note:* For Enterprise, Performance, Efficiency, and Teamwork editions only.
-:::
+
 
 Prometheus
 

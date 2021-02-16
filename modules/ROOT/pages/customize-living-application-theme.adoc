@@ -1,8 +1,8 @@
 = Customize the living application theme
 
-::: info
+NOTE:
 *Note:* For Enterprise, Performance, Efficiency, and Teamwork editions only.
-:::
+
 
 This page explains how to create a theme project in the Studio.
 
@@ -21,9 +21,9 @@ Each application can have its own theme.
 
 When you create a new theme (right click in Project Explorer > New > Theme...), you start with a default project theme based on https://sass-lang.com/[Sass] preprocessor and SCSS syntax.
 
-::: info
+NOTE:
 *Note:* Sass is a CSS preprocessor and SCSS syntax is a superset of CSS3. You can just write classic CSS 3 in a .scss file.
-:::
+
 
 === Default theme project
 
@@ -336,9 +336,9 @@ $icon-font-path: "./fonts/"; // path relative to the theme.css file in the dist 
 
 All the variables defined in this file are used by _bootstrap-sass_. You can look at the following scss file `node_modules/bootstratp-sass/assets/stylesheets/bootstrap/_variable.scss` to discover all available variables.
 
-::: info
+NOTE:
 *Note:* Only variables declared with the `!default` flag can be overridden.
-:::
+
 
 Sass and SCSS have lots of other interesting features that you could use. Check https://sass-lang.com/documentation[Sass documentation] to known more.
 

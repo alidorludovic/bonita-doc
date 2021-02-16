@@ -57,9 +57,9 @@ Re-create a new Bonita container with the same hostname (-h) and this host direc
 docker run --name bonita -h <hostname> -v ~/bonita-lic/:/opt/bonita_lic/ -d -p 8080:8080 quay.io/bonitasoft/bonita-subscription:${varVersion}.0
 ----
 
-::: info
+NOTE:
 This will only add the initial license to the Bonita Runtime. To renew a license on an existing installation see <<section-update-configuration,Update configuration and license section>>
-:::
+
 
 [cols=2*]
 |===
@@ -296,8 +296,8 @@ Once renewed from Bonita Customer Portal, the license file and the configuration
 
 Setup tool can be used outside of the Docker container directly by downloading the Tomcat bundle and running it from there.
 
-::: info
+NOTE:
 The setup tool needs to be able to access the database. Because of that, if the database is in a docker container, its port must be exposed to the host.
-:::
+
 
 See link:BonitaBPM_platform_setup.md#update_platform_conf[setup tool page] for more information.
