@@ -2,13 +2,13 @@
 
 Discover how to create a cluster from scratch, convert a single node into a cluster, allow communication between nodes and manage a cluster.
 
-::: info
+NOTE:
 *Note:* The cluster feature is a Subscription feature for *Performance* edition only.
-:::
 
-::: warning
+
+WARNING:
 It is possible to manage the lifecycle of a node using the API to connect directly to the node, but this bypasses the load balancer so should be done with care and only in exceptional circumstances.
-:::
+
 
 == Note when using the AWS support
 
@@ -150,9 +150,9 @@ In this case you already have a Bonita Platform running as single node installat
 Some properties of the Bonita Platform needs to be changed in order to make your installation work as a cluster node.
 
 * Download the Bonita xref:deploy-bundle.adoc[Deploy bundle] and unzip it at some place of your choice.
-::: info
+NOTE:
 The platform setup tool is also present in the Tomcat or WildFly bundle under the `setup` directory.
-:::
+
 * Configure it as described in the xref:BonitaBPM_platform_setup.adoc[platform setup tool page]
 * Run the `setup.sh pull` or `setup.bat pull`. This will retrieve the configuration of your platform under `platform_conf/current` folder.
 * Update configuration files that are in the `platform_conf/current` folder of the platform setup tool.

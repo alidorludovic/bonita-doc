@@ -67,10 +67,10 @@ This specifies that information about the user with id 3 can only be seen by use
 If there are conflicts between permissions, the more restrictive definition overrides the more general.
 You can see this in the example above, where the specific permission for user 3 overrides the general permission for seeing user information.
 
-::: warning
+WARNING:
 Do *not* modify file `resources-permissions-mapping.properties` directly, as it is reserved for default values.
 Custom values should be added manually in file `resources-permissions-mapping-`*`-custom`*`.properties`
-:::
+
 
 [discrete]
 ==== Compound permissions mapping
@@ -90,10 +90,10 @@ When you install a custom page in the portal, if the page declares its resources
 of this file (`compound-permissions-mapping-internal.properties`). Then all the users being able to access this page (because it is part of a custom profile or
 Living Application they have access to) will also be automatically granted the necessary permissions to call the required REST API resources.
 
-::: warning
+WARNING:
 Do *not* modify file `compound-permissions-mapping.properties` directly, as it is reserved for default values.
 Custom values should be added manually in file `compound-permissions-mapping`*`-custom`*`.properties`
-:::
+
 
 +++<a id="custom-permissions-mapping">++++++</a>+++
 
@@ -175,10 +175,10 @@ If you write your own scripts:
 * make sure this .groovy file is placed in the default directory, under 'initial/tenant_template_security_scripts/' if the platform has never been started,
 or under 'current/tenants/TENANT_ID/tenant_security_scripts/' if the platform has already been started
 
-::: warning
+WARNING:
 Do *not* modify file `dynamic-permissions-checks.properties` directly, as it is reserved for examples, and may be overwritten during migration to a newer version.
 Custom values should be added manually in file `dynamic-permissions-checks`*`-custom`*`.properties`
-:::
+
 
 [discrete]
 ==== Example dynamic check script
@@ -294,10 +294,10 @@ When a new xref:pages.adoc[custom page] is added, the permissions defined in the
 It is not necessary to restart the applications server to activate security for the new custom page.
 Depending on the permissions that a user of the page already has, it might be necessary to log out and log in again to get access to the new custom page.
 
-::: warning
+WARNING:
 If the page declares resources provided by a REST API extension (link to the REST API extention page), then the REST API extension must be deployed before the page,
 otherwise the compound permissions won't be automatically created when deploying the page.
-:::
+
 
 == Authorization and custom profiles
 

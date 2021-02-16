@@ -2,9 +2,9 @@
 
 Bonita can be configured to perform user authentication against an LDAP server such as Active Directory, Apache Directory Server, or OpenLDAP.
 
-::: info
+NOTE:
 *Note:* For Performance, Efficiency, and Teamwork editions only.
-:::
+
 
 *Important notes:*
 

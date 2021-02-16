@@ -30,12 +30,12 @@ Even if the `bonita.war` comes with an embedded Bonita Engine, you can choose *n
 
 In this deployment you must configure the JVM containing the client Bonita Portal to use the remote connection to the engine. To do so see link:configure-client-of-bonita-bpm-engine.md#client_config[configuring the connection to a remote engine].
 
-::: info
+NOTE:
 Don't forget to set in this JVM the following properties:
 
 * `org.bonitasoft.platform.username` must be set with the username of the platform admin
 * `org.bonitasoft.platform.password` must be set with the password of the platform admin
-:::
+
 
 === Accessible through HTTP
 
@@ -55,9 +55,9 @@ But you can still use the pre packaged Tomcat bundles or the `bonita.war` webapp
 
 === Accessible through RMI (EJB3)
 
-::: danger
+ danger
 EJB communication protocol is removed in 7.10.
-:::
+
 
 image::images/images-6_0/poss_deploy3.png[deploy3]
 

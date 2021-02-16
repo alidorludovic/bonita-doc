@@ -8,11 +8,11 @@ Description on how to install Bonita Runtime on an existing and already installe
 * The Bonita Deploy bundle is a way of setting up a Bonita Platform. You'll be able to get a setup quite similar to WildFly or Tomcat bundle.
 * It's also used to package other tools such as the LDAP synchronizer.
 
-:::warning
+WARNING:
 This installation procedure only specifically targets the Java EE application Servers that have been installed under a single root folder (typically, from a .zip file).
 Thus, for installations using native distribution packages (that more often than not split the binaries and the configuration files into separate folder hierarchies),
 it would be up to you to adapt the documented steps to your very own folder layout.
-:::
+
 
 == Deploy bundle content
 
@@ -41,13 +41,13 @@ or from the https://customer.bonitasoft.com/download/request[Customer Portal] fo
 === Install Bonita Platform in Tomcat
 
 Copy all files and directories from DEPLOY_ZIP_HOME/Tomcat-8.5.23/server to your Tomcat root directory (TOMCAT_HOME).
-:::warning
+WARNING:
 Some configuration files from the deploy zip will overwrite some default tomcat configuration files. Proceed
 with care in a tomcat where other applications are already installed.
-:::
-:::warning
+
+WARNING:
 There is an https://bz.apache.org/bugzilla/show_bug.cgi?id=58999[issue on tomcat 8.0.32] preventing the portal Look & feel to be compiled. If you deploy bonita on an existing tomcat installation, make sure it is a different version of tomcat (preferably 8.5.x with x>=23).
-:::
+
 
 === Configure data sources
 

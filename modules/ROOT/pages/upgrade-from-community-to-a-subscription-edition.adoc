@@ -31,9 +31,9 @@ while benefiting from the Subscription edition features.
 
 The upgrade procedure is quite simple and only requires a limited service downtime (less than an hour for basic configurations).
 
-::: warning
+WARNING:
 A Bonita platform upgrade can only be performed on the same database type.
-:::
+
 
 To upgrade a Bonita platform from Community edition to a Subscription edition, follow these steps:
 

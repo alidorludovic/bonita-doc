@@ -4,9 +4,9 @@ The Bonita SAP Java Connector 3 allows Bonita to communicate with any SAP system
 
 == Notice
 
-::: info
+NOTE:
 *Note:* For Performance and Efficiency editions only.
-:::
+
 
 == Prerequisite
 

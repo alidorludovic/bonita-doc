@@ -4,13 +4,13 @@ Learn how to build processes and other artifacts developed in Bonita Studio, but
 and interact with Bonita Studio.
 This allows to automate builds through scripts or any automation tooling.
 
-::: warning
+WARNING:
 This way of building artifacts is deprecated. Use https://documentation.bonitasoft.com/bcd/latest/livingapp_build[Bonita Continuous Delivery add-on] instead.
-:::
 
-::: info
+
+NOTE:
 *Note:* For Performance, Efficiency, and Teamwork editions only.
-:::
+
 
 == Overview
 

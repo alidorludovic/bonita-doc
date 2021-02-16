@@ -8,9 +8,9 @@ The business data model is the definition of the business data that is shared by
 
 Your business data is the information that is shared between your processes and applications. It is defined as a set of business object in a business data model (BDM). There is one BDM that is used by all processes and applications in a tenant.
 
-::: info
+NOTE:
 *:fa-info-circle:*  A BDM is defined at tenant level. It means you can have different BDM per tenant on the same Bonita platform. See <<bdm_storage,BDM data storage>> for more information on how to configure a business data model per tenant.
-:::
+
 
 When you define a process, you specify the business objects that are relevant to the process. When a process is instantiated (a case is started), the specified business objects are instantiated as required, becoming variables within the process instance.
 
@@ -120,13 +120,13 @@ Composition and aggregation are two ways in which you can define a composite bus
 
 Example: A Purchase Order object consists of a set of primitive attribute variables (such as PO number, client, creation date), and a set of order item objects. The order items have no meaning outside the order, so have a composition relationship with the purchase order. An order item contains a product object and a simple attribute for quantity. The product object has an existence outside the order item (it is used in the product catalog), so has an aggregation relationship with the order item.
 
-::: warning
+WARNING:
 In Bonita, a composition relationship is unique: A given object can only be used in one composition relationship. For exemple, you cannot use the same object _Wheel_ in composition for an object _Car_ and an object _Bike_. You will have to use an object _WheelCar_ and an object _WheelBike_.
-:::
 
-::: warning
+
+WARNING:
 In Bonita, in an aggregation relationship, a child must exist when creating its parent. When creating a parent, you must refer to an existing child to value an attribute with an aggregation relationship.
-:::
+
 
 In the Bonita Studio BDM wizard, you can specify the objects that are related by composition and aggregation, as well as the simple attributes. A child object can be mandatory or optional. A child object can be multiple, which means that the composite object contains zero or more (if optional) or one or more (if mandatory) instances of the child object. You cannot set a unique constraint on a child object. The default relationship is composition.
 
@@ -227,10 +227,10 @@ There are two ways to export a business data model: in a ZIP file for deployment
 
 To deploy the BDM, you export it as a ZIP file from Bonita Studio and then import it into Bonita Portal.
 
-::: warning
+WARNING:
 :fa-exclamation-triangle: *Warning:* Before deploying the business data model, you must xref:pause-and-resume-bpm-services.adoc[pause] the BPM services, so that the update can be performed without affecting ongoing processes.
 *Important:* You are recommended xref:back-up-bonita-bpm-platform.adoc[Back up your platform] and database before deploying a new BDM in case of problems during the update.
-:::
+
 
 Follow these steps:
 
@@ -364,9 +364,9 @@ Then, click on the _*pencil*_ button to open the _*Edit Expression*_ editor. Cho
 
 You can use business data in a Java program by using the DAO. DAO gives _*read*_ access to business objects.
 
-::: warning
+WARNING:
 *:fa-exclamation-triangle: Warning*: In a connector, code is executed outside a transaction, so retrieving or updating business data by DAO is not supported.
-:::
+
 
 You can however manipulate the business object outside the connector, and use business objects as connector input or output:
 

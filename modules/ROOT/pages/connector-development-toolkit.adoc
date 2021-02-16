@@ -2,9 +2,9 @@
 
 A set of best of breed tools to develop and test custom connectors independently of the Bonita Studio.
 
-::: info
+NOTE:
 *Note:* For Performance, Efficiency, and Teamwork editions only.
-:::
+
 
 == Overview
 

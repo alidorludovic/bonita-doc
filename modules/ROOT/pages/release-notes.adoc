@@ -133,9 +133,9 @@ Now all features are available to all users.
 * Talend connectors have been *removed*: newer versions of https://help.talend.com/reader/ISPDm8GQ6s0HN0348QulWg/HF8MMjUq3bllDlzOz2lqxw[Talend expose a REST API] that should be used with the REST connector.
 * Google Calendar v2 connectors have been *removed*: v2 API are not more supported by Google, use Google Calendar v3 instead.
 
-::: info
+NOTE:
 *Migration*: in order to migrate processes using those connectors, you will have to export those connectors from a previous Bonita Studio version and re-import them.
-:::
+
 
 === Deprecated BDM API
 
@@ -149,9 +149,9 @@ In previous versions, this file needed to be updated to activate the archive con
 The configuration is now easier: the feature is activated by default when using the Performance edition and the file
 has been removed.
 
-::: info
+NOTE:
 *Note*: the migration process automatically removes this file from an existing configuration
-:::
+
 
 == API behavior change
 

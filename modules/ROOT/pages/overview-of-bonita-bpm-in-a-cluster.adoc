@@ -2,9 +2,9 @@
 
 Learn how to achieve High availability by setting up Bonita Platform in cluster.
 
-::: info
+NOTE:
 *Note:* For Performance edition only.
-:::
+
 
 You can use Bonita in a cluster configuration to provide increased availability: more than one node runs Bonita Engine,
 so if a node becomes unavailable, the remaining nodes in the cluster can take over, minimizing the interruption to the service

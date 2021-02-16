@@ -4,10 +4,10 @@ This page describes the suggested hardware and software requirements to install 
 
 == Hardware
 
-::: info
+NOTE:
 *Note:* The hardware recommended for Bonita Platform is strongly dependent on your environment and
 processes (number of processes instances, number of current users, operations and complexity...).
-:::
+
 
 Hardware required for Bonita Platform (Bonita Engine and Bonita Portal)
 | Type         | Minimum     | Recommended                       |
@@ -58,9 +58,9 @@ Therefore, using Bitronix as a transaction manager with SQL Server does not work
 
 ==== Subscription users
 
-::: info
+NOTE:
 *Note:* In order to apply this procedure, you MUST use a Chrome browser version that doesn't suffer from the incompatibility, or you can use Firefox, Internet Explorer/Edge or Safari, for example.
-:::
+
 
 . Log in to Bonita Portal as Administrator.
 . In the menu, click on 'Portal'.

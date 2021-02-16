@@ -2,9 +2,9 @@
 
 Learn how to handle errors happening on a task.
 
-::: info
+NOTE:
 *Note:* For Performance edition only.
-:::
+
 
 A task can fail in Bonita Engine for several reasons. Typical reasons include:
 

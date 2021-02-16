@@ -2,9 +2,9 @@
 
 You can get custom statistics and reports in order to extract meaningful data and monitor how different processes are performing.
 
-::: info
+NOTE:
 *Note:* For Performance, Efficiency, and Teamwork editions only.
-:::
+
 
 == Purpose
 

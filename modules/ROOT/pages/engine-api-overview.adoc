@@ -42,9 +42,9 @@ There is also a high-level xref:rest-api-overview.adoc[Web REST API], intended f
 
 == API access
 
-::: danger
+ danger
 EJB communication protocol is removed in 7.10.
-:::
+
 
 The Bonita Engine APIs can be accessed locally or remotely, in the following modes:
 

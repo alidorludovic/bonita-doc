@@ -2,9 +2,9 @@
 
 Profile artifacts should be managed in the bonita studio during development. But you can still import/export them using the Bonita portal.
 
-::: info
+NOTE:
 *Note:* For Performance, Efficiency, and Teamwork editions only.
-:::
+
 
 == Overview
 

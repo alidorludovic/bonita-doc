@@ -2,9 +2,9 @@
 
 This page explains how to generate process documentation and which elements are exported.
 
-::: info
+NOTE:
 *Note:* For Bonita Performance, Efficiency, and Teamwork editions only.
-:::
+
 
 == Overview
 

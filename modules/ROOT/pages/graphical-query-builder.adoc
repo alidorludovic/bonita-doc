@@ -2,9 +2,9 @@
 
 Build a database query graphically.
 
-::: info
+NOTE:
 *Note:* For Performance, Efficiency, and Teamwork editions only.
-:::
+
 
 == Connect to the database
 

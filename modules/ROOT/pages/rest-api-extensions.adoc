@@ -201,12 +201,12 @@ There is some additional prerequisites when creating a REST API extension with E
 * Basic knowledge of Maven
 * *Access to http://central.maven.org/maven2[Maven central repository]*. If your provider is restricting Internet access you may configure https://maven.apache.org/guides/mini/guide-proxies.html[proxy settings] or create a https://maven.apache.org/guides/mini/guide-mirror-settings.html[mirror repository].
 
-::: warning
+WARNING:
 *Mirror configuration:* When setting a mirror using a `<mirrorOf>*</mirrorOf>` redirection, add an exception for the studio internal repository id like this: `<mirrorOf>*,!studio-internal-repository</mirrorOf>` in your `settings.xml` (do not put spaces in this String, otherwise the exclusion won't be considered by Maven)
 
 The `studio-internal-repository` repository is used by the Studio to resolve some dependencies not available in public repositories.
 Without this exclusion, the REST API Extension build fails because of some missing dependencies.
-:::
+
 
 === Generate a new REST API extension skeleton
 
@@ -434,8 +434,8 @@ def result = [
 return buildResponse(responseBuilder, HttpServletResponse.SC_OK,new JsonBuilder(result).toPrettyString())
 ----
 
-::: info
+NOTE:
 We do not recommend to manage time zone at the Rest API level, as the local of the Rest API server, the Bonita Engine server, and the End User machine could be different.
 So we encourage you to manipulate UTC dates only server-side.
 You can see how we link:datetimes-management-tutorial.md#toc2[manage the time zone using the date time picker]. This time zone should only be managed in the end user interface.
-:::
+

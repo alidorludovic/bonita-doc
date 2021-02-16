@@ -2,14 +2,14 @@
 
 UI Designer allows the customization of the page layouts (header, body and footer).
 
-::: info
+NOTE:
 *Note:* For Performance, Efficiency, and Teamwork editions only.
-:::
 
-::: warning
+
+WARNING:
 In 7.6 we made some improvements on the default layout.
 We recommand that you re-create your custom layout based on Bonita 7.6.0+ default layout.
-:::
+
 
 ## Overview
 

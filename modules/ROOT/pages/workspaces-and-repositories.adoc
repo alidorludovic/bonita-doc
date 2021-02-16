@@ -2,9 +2,9 @@
 
 Organize and share your Bonita project using workspaces and repositories in order to ease developers team collaboration.
 
-::: info
+NOTE:
 *Note:* For Performance, Efficiency, and Teamwork editions only.
-:::
+
 
 == Workspaces and repositories
 

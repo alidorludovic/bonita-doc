@@ -8,9 +8,9 @@ If your application is using a technology other than Java, you can integrate it 
 
 Access to the Web REST API depends on xref:rest-api-authorization.adoc[REST API authorization] settings.
 
-::: danger
+ danger
 EJB communication protocol is removed in 7.10.
-:::
+
 
 image::images/images-6_0/rest_overview_v2.png[diagram of architecture of a REST client integrated with Bonita]
 

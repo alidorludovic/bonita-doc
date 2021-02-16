@@ -2,9 +2,9 @@
 
 Bonita can be configured to use CAS to provide single sign-on (SSO), as long as you already have a working CAS service and all Bonita users are registered in CAS.
 
-::: info
+NOTE:
 *Note:* For Performance, Efficiency, and Teamwork editions only.
-:::
+
 
 This information applies to a Bonita platform deployed from a bundle, not to the Engine launched from Bonita Studio.
 
@@ -24,13 +24,13 @@ When a reverse proxy is used, the `server` and `port` of the HTTP request genera
 
 As a consequence, configure the reverse proxy to include the `Host:` header when forwarding the request to the web application server.
 
-::: info
+NOTE:
 The method https://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpServletRequest.html#getRequestURL--[`getRequestURL ot HttpServletRequest`] is used internaly to retrieve the `server` and `port` of the HTTP request.
-:::
 
-::: example
+
+ example
 *Reverse proxy configuration:*  use the http://httpd.apache.org/docs/2.2/mod/mod_proxy.html#proxypreservehost[ProxyPreserveHost] property (Apache 2.0.31 or greater).
-:::
+
 
 If you need more fine tuning or if you cannot update the reverse proxy configuration, you can consult the official documentation for https://tomcat.apache.org/connectors-doc/common_howto/proxy.html[Tomcat] or https://docs.jboss.org/author/display/WFLY10/Undertow+subsystem+configuration[WildFly].
 
@@ -111,19 +111,19 @@ Right after the opening `<security-domains>` tag, insert these lines (specifying
 </security-domain>
 ----
 
-::: warning
+WARNING:
 *Warning*: module names must be unique (from the example above, BonitaAuthentication-1 is the module name). Therefore, remove the unecessary ones
-:::
+
 
 . In the `CasLoginModule` configuration, check that the `principalGroupName` property is set to `CallerPrincipal`. This is required to retrieve the username from the Bonita application.
 Bonita uses the CAS LoginModule in the JASIG implementation, so see the CAS LoginModule section of the https://wiki.jasig.org/display/CASC/JAAS+Integration[Jasig documentation] for more information.
 . Update xref:BonitaBPM_platform_setup.adoc[`bonita-tenant-sp-custom.properties`] from `setup/platform_conf/initial/tenant_template_engine/` if platform has not been initialized yet or `setup/platform_conf/current/tenants/[TENANT_ID]/tenant_engine/` and `setup/platform_conf/current/tenant_template_engine/`.
-::: info
+NOTE:
 If the platform has already been initialized, every update to the configuration files under `setup/platform_conf/current` must be done using the `setup` tool:
  ** `setup pull`
  ** edit configuration file(s)
  ** `setup push`
-:::
+
 
  .. Remove the comment flags from these lines:
 `authentication.service.ref.name=jaasAuthenticationService`
@@ -161,9 +161,9 @@ BonitaAuthentication-1 {
 };
 ----
 +
-::: warning
+WARNING:
 *Warning*: module names must be unique (from the example above, BonitaAuthentication-1 is the module name). Therefore, remove the unecessary ones
-:::
+
 +
 The JAAS configuration file, `jaas-standard.cfg`, is sorted by sets of authentication modules. For Bonita, each set matches a tenant configuration and the name is prefixed with _BonitaAuthentication-`<tenant-id>`_. Make sure there is a set of authentication modules for each tenant in your platform. For each tenant, set the CAS service to point to the application login page and set `casServerUrlPrefix` to point to the CAS server.
 
@@ -173,12 +173,12 @@ Bonita uses the CAS LoginModule in the JASIG implementation, so see the CAS Logi
 . Copy `cas-client-core-x.x.x.jar` from `BonitaSubscription-x.x.x-deploy/cas-x.x.x-module/org/jasig/cas/main` into the `TOMCAT_HOME/server/lib` directory.
 . Copy `commons-logging-x.x.x.jar` from `BonitaSubscription-x.x.x-deploy/BonitaSubscription-x.x.x-LDAP-Synchronizer/BonitaSubscription-x.x.x-LDAP-Synchronizer/lib` into the `TOMCAT_HOME/server/lib` directory.
 . Update `bonita-tenant-sp-custom.properties` from `setup/platform_conf/initial/tenant_template_engine/` if platform has not been initialized yet or `setup/platform_conf/current/tenants/[TENANT_ID]/tenant_engine/` and `setup/platform_conf/current/tenant_template_engine/`.
-::: info
+NOTE:
 If the platform has already been initialized, every update to the configuration files under `setup/platform_conf/current` must be done using the `setup` tool:
  ** `setup pull`
  ** edit configuration file(s)
  ** `setup push`
-:::
+
 
  .. Remove the comment flags from these lines:
 `authentication.service.ref.name=jaasAuthenticationService`
@@ -197,12 +197,12 @@ Specify the relevant IP address and port number.
 
 . For each tenant, edit `authenticationManager-config.properties` to enable the CASRemoteAuthenticationManager and its properties.
 Edit the `authenticationManager-config.properties` located in `platform_conf/initial/tenant_template_portal` for not initialized platform or `platform_conf/current/tenant_template_portal` and `platform_conf/current/tenants/[TENANT_ID]/tenant_portal/`.
-::: info
+NOTE:
 If the platform has already been initialized, every update to the configuration files under `setup/platform_conf/current` must be done using the `setup` tool:
  ** `setup pull`
  ** edit configuration file(s)
  ** `setup push`
-:::
+
 
 Make sure that `auth.AuthenticationManager` property is set to `org.bonitasoft.console.common.server.auth.impl.jaas.cas.CASRemoteAuthenticationManagerImpl`
 Uncomment `Cas.serverUrlPrefix` and `Cas.bonitaServiceURL` properties as shown below (specify the relevant IP addresses and ports):
@@ -246,13 +246,13 @@ To troubleshoote SSO login issues, you need to increase the xref:logging.adoc[lo
 
 If you are using CAS, when users log out of Bonita Portal, they log out of CAS. Therefore they are logged out of all applications that are using the CAS service. To avoid this, you can hide the logout option of the portal.
 To do this, set the `logout.link.hidden=true` option in `authenticationManager-config.properties` located in `platform_conf/initial/tenant_template_portal` for not initialized platform or `platform_conf/current/tenant_template_portal` and `platform_conf/current/tenants/[TENANT_ID]/tenant_portal/`.
-::: info
+NOTE:
 If the platform has already been initialized, every update to the configuration files under `setup/platform_conf/current` must be done using the `setup` tool:
 
 * `setup pull`
 * edit configuration file(s)
 * `setup push`
-:::
+
 
 If this option is set, when users navigate away from the Portal, they are still logged in to CAS.
 
@@ -301,9 +301,9 @@ For detailed information about the procedure to install Restful access on your C
 * http://apereo.github.io/cas/4.2.x/index.html[CAS SSO RESTful API]
 * xref:rest-api-overview.adoc[Bonita REST API]
 
-::: info
+NOTE:
 *Note:* All calls issued to get the TGT or ST are made to the CAS SSO server.
-:::
+
 
 [discrete]
 ==== Getting the Ticket Granting Ticket (TGT)
@@ -374,9 +374,9 @@ Take the ST response and paste it in the url of the Bonita Engine login request,
 
 Use a *Bonita Portal* URL where the <<restricted_cas_urls,CAS AuthenticationFilter applies>> for authentication to work.
 
-::: warning
+WARNING:
 Prefer GET over POST to authenticate because experience has shown that in some server configuration, POST parameters cannot be retrieved in the CAS authentication web filter.
-:::
+
 
 [discrete]
 ===== *Authentication to Bonita Engine* with GET
@@ -426,8 +426,8 @@ Use a Bonita Portal SSO protected URL for this action.
 
 You are now logged into Bonita Portal and REST API calls will succeed.
 
-::: warning
+WARNING:
 Cookies must be enabled in REST client side for authentication to persist across REST API calls. +
 Therefore, calling web application root context may not work (e.g. `/bonita` by default) because session cookie seems not to be set on all web server configurations.
 *Use a protected URL to authenticate to Bonita Portal when using the ticket parameter with POST method.*
-:::
+
