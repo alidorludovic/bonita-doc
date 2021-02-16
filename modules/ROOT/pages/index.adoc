@@ -24,7 +24,7 @@ xref:release-notes.adoc#_user_task_list_re_design[[.card-title]#User task list r
 
 [.card.card-index]
 --
-xref:release-notes.adoc##_new_ui_designer_widgets[[.card-title]#New UI Designer widgets: File viewer and Rich text area# [.card-body]#pass:q[A secure platform to automate Ethereum operations.]#]
+xref:release-notes.adoc#_new_ui_designer_widgets[[.card-title]#New UI Designer widgets: File viewer and Rich text area# [.card-body]#pass:q[A secure platform to automate Ethereum operations.]#]
 --
 
 [.card.card-index]
