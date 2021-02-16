@@ -2,14 +2,6 @@
 
 Welcome to the Bonita BPM documentation website.
 
-////
-<div class="col-md-4">
-<div class="panel panel-default">
-<div class="panel-heading">Highlights</div>
-<div class="panel-body">
-<div class="menu-block-wrapper">
-////
-
 [.card-section]
 == Highlight
 
