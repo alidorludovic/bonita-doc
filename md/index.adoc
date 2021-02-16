@@ -1,0 +1,93 @@
+= Bonita BPM Documentation
+
+Welcome to the Bonita BPM documentation website.
+
+Click on the *links* below to find useful information quickly, or xref:taxonomy.adoc[browse the whole content tree], or use the *table of contents* to go straight to the information you want to read.
+
+////
+<div class="col-md-4">
+<div class="panel panel-default">
+<div class="panel-heading">Highlights</div>
+<div class="panel-body">
+<div class="menu-block-wrapper">
+////
+
+* xref:release-notes.adoc[Release notes $\{varVersion}]
+// {li:.first .leaf}
+* link:release-notes.md#bdm-usability-improvements[BDM usability improvements]
+// {li:.leaf}
+* link:release-notes.md#uid-usability-improvements[UI Designer usability improvements]
+// {li:.last .leaf}
+* link:release-notes.md#task-and-case[Task & Case Management]
+// {li:.leaf}
+* link:release-notes.md#bpm-studio[Bonita BPM Studio]
+// {li:.leaf}
+* link:release-notes.md#csrf-security[CSRF security mechanism is now enabled by default]
+// {li:.leaf}
+* link:release-notes.md#platform-installation[Simplify platform installation]
+// {li:.leaf}
+* link:release-notes.md#technology-updates[Support of Wildfly 10.1.0 application server]
+// {li:.leaf}
+
+// {ul:.menu .nav}
+
+////
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="panel panel-default">
+<div class="panel-heading">Getting started</div>
+<div class="panel-body">
+<div class="menu-block-wrapper">
+////
+
+* xref:getting-started-tutorial.adoc[Getting started tutorial]
+// {li:.first .leaf}
+* xref:diagram-overview.adoc[Process diagram overview]
+// {li:.leaf}
+* xref:key-concepts.adoc[Key concepts]
+// {li:.leaf}
+* xref:ui-designer-overview.adoc[UI designer overview]
+// {li:.leaf}
+* xref:bonita-bpm-studio-installation.adoc[Bonita BPM Studio installation]
+// {li:.leaf}
+* xref:tomcat-bundle.adoc[Basic Bonita BPM platform installation]
+// {li:.leaf}
+* xref:create-your-first-project-with-the-engine-apis-and-maven.adoc[Create your first project with the Engine APIs and Maven]
+// {li:.last .leaf}
+
+// {ul:.menu .nav}
+
+////
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="panel panel-default">
+<div class="panel-heading">Resources</div>
+<div class="panel-body">
+<div class="menu-block-wrapper menu-name-menu-quicklinks">
+////
+
+* http://www.bonitasoft.com/how-we-do-it/downloads[Download Bonita BPM software]
+// {li:.first .leaf}
+* http://www.bpmn.org/[BPMN standard]
+// {li:.leaf}
+* http://www.bonitasoft.com/for-you-to-read/bpm-library/ultimate-guide-bpmn[The Ultimate Guide to BPMN2]
+// {li:.leaf}
+* http://www.bonitasoft.com/for-you-to-read/bpm-library/best-practices-continuous-integration-bonita-bpm[Best Practices for Continuous Integration with Bonita BPM]
+// {li:.leaf}
+* http://documentation.bonitasoft.com/javadoc/api/${varVersion}/index.html[Javadoc]
+// {li:.leaf .last}
+
+// {ul:.menu .nav}
+
+////
+</div>
+</div>
+</div>
+</div>
+////
