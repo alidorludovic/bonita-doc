@@ -4,9 +4,6 @@ Welcome to the Bonita BPM documentation website.
 
 Click on the *links* below to find useful information quickly, or xref:taxonomy.adoc[browse the whole content tree], or use the *table of contents* to go straight to the information you want to read.
 
-* [New UI Designer widgets: File viewer and Rich text area](release-notes.md#new-widgets)<!--{li:.leaf}-->
-* [UI Designer usability improvements](release-notes.md#usability-improvements)<!--{li:.last .leaf}-->
-
 [.card-section]
 == Highlight
 
@@ -17,22 +14,22 @@ xref:release-notes.adoc[[.card-title]#Release note {varVersion}# [.card-body]#pa
 
 [.card.card-index]
 --
-xref:release-notes.adoc#bonita-home-removal[[.card-title]#Bonita home removal for easier configuration# [.card-body]#pass:q[A secure platform to automate Ethereum operations.]#]
+xref:release-notes.adoc#_bonita_home_removal[[.card-title]#Bonita home removal for easier configuration# [.card-body]#pass:q[A secure platform to automate Ethereum operations.]#]
 --
 
 [.card.card-index]
 --
-xref:release-notes.adoc#user-task[[.card-title]#User task list redesign for better efficiency# [.card-body]#pass:q[A secure platform to automate Ethereum operations.]#]
+xref:release-notes.adoc#_user_task_list_re_design[[.card-title]#User task list redesign for better efficiency# [.card-body]#pass:q[A secure platform to automate Ethereum operations.]#]
 --
 
 [.card.card-index]
 --
-xref:release-notes.adoc#new-widgets[[.card-title]#New UI Designer widgets: File viewer and Rich text area# [.card-body]#pass:q[A secure platform to automate Ethereum operations.]#]
+xref:release-notes.adoc##_new_ui_designer_widgets[[.card-title]#New UI Designer widgets: File viewer and Rich text area# [.card-body]#pass:q[A secure platform to automate Ethereum operations.]#]
 --
 
 [.card.card-index]
 --
-xref:release-notes.adoc#usability-improvements[[.card-title]#UI Designer usability improvements# [.card-body]#pass:q[A secure platform to automate Ethereum operations.]#]
+xref:release-notes.adoc#_ui_designer_usability_improvements[[.card-title]#UI Designer usability improvements# [.card-body]#pass:q[A secure platform to automate Ethereum operations.]#]
 --
 
 [.card-section]
