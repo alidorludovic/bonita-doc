@@ -20,14 +20,14 @@ Help is provided on consistency checking between BDM, profiles, and BDM access c
 A "profile access" tooling is also provided, to validate BDM access by profile.
 This new resource can be installed and updated on a Bonita platform while BPM services are running, via the Administrator Portal.
 
-+++<a id="save-form">++++++</a>+++
+[#save-form]
 
 === Save a Form temporarily (starting with Teamwork edition)
 
 When a form contains lots of fields, or when the user misses some information required to fill out the form at once, saving the form to complete it later is a need. This is now possible with the new "Save Button" widget, that can be added to any form.
 JavaScript information entered by the user is temporarily saved in the web browser local storage while the task is still in "pending" status. When the user comes back to the task, the values entered are displayed on the form, missing data can be added, so the user efficiently submits the form to either start a process instance or execute a task.
 
-+++<a id="new-case-overview">++++++</a>+++
+[#new-case-overview]
 
 === New case overview
 
