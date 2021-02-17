@@ -187,7 +187,15 @@ Use BPMN 2 importer for model exchange with third-party editors.
 
 #### Fixes in Bonita Development Suite (Studio and UI Designer)
 
+* STUDIO-3830 - Performance decreases direly as the number of diagrams and process definitions in the project increases 
+* STUDIO-3835 - Expression dialog is slow to open 
+* STUDIO-3819 - Documentation generation is missing task contract inputs  
+* STUDIO-3766 - Missing scroll bar on BDM editor queries table  
+* UID-364 - When the first fileUpload widget is removed from a collection, the new first widget still displays the file chosen in the removed item
+
 #### Fixes in Bonita Runtime (including Portal)
+
+
 
 ### Fixes in Bonita 2021.1 (2021-01-28)
 #### Fixes in Bonita Development Suite (Studio and UI Designer)
